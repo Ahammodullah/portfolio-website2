@@ -1,0 +1,136 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.logo h1 {
+  color: #ff6b6b;
+  font-size: 24px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Search Bar */
+.search-bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 500px;
+  margin: 10px 0;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  background: #ff6b6b;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #e55353;
+}
+
+.cart{
+  color: white;
+  text-decoration: none;
+}
+
+/* Slider Section */
+.slider-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%;
+}
+
+.slides img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background:grey;
+  color:black;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background: #ff6b6b;
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .search-bar {
+      margin-bottom: 10px;
+  }
+
+  .prev-btn, .next-btn {
+      padding: 10px;
+      font-size: 20px;
+  }
+}

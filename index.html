@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive FnFbuy Header with Slider</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <h1>FnFbuy</h1>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products, vendors and other">
+                <button>Search</button>
+            </div>
+
+            <!-- User Options -->
+            <div class="user-options">
+                <a href="#" class="cart">
+                    <span class="cart-count">🛒 </span>Cart  
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Slider Section -->
+    <section class="slider-section">
+        <div class="slider">
+            <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+            
+            <div class="slides">
+                <img src="image/Banner-8_Lai8FuW.jpg" alt="Banner 1">
+                <img src="image/Banner-2.jpg" alt="Banner 2">
+                <img src="image/Banner-3.jpg" alt="Banner 3">
+
+                <img src="image/Banner-1.jpg" alt="Banner 4">
+                <img src="image/Banner-5.jpg" alt="Banner 5">
+                <img src="image/Banner-7_z8a63jg (1).jpg" alt="Banner 6">
+
+                <img src="image/Banner-4.jpg" alt="Banner 7">
+                <img src="image/Banner-11 (1).jpg" alt="Banner 8">
+            </div>
+            
+            <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+</html>
