@@ -1,26 +1,35 @@
-let currentIndex = 0;
+let currentBannerIndex = 0;
 
-// Select all slides
-const slides = document.querySelector('.slides');
-const totalSlides = slides.children.length;
+function updateBannerTransform() {
+  const bannerSlides = document.getElementById('banner-slider');
+  const totalBanners = bannerSlides.children.length;
+  const bannerWidth = bannerSlides.children[0].offsetWidth;
 
-// Navigate to the previous slide
-function prevSlide() {
-    currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
-    updateSlidePosition();
+  // Loop through banners
+  if (currentBannerIndex < 0) {
+    currentBannerIndex = totalBanners - 1;
+  } else if (currentBannerIndex >= totalBanners) {
+    currentBannerIndex = 0;
+  }
+
+  // Translate to the current banner
+  bannerSlides.style.transform = `translateX(-${currentBannerIndex * bannerWidth}px)`;
 }
 
-// Navigate to the next slide
-function nextSlide() {
-    currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
-    updateSlidePosition();
+function prevBannerSlide() {
+  currentBannerIndex--;
+  updateBannerTransform();
 }
 
-// Update the slide position
-function updateSlidePosition() {
-    const slideWidth = slides.children[0].offsetWidth;
-    slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+function nextBannerSlide() {
+  currentBannerIndex++;
+  updateBannerTransform();
 }
+
+// Automatically adjust slide on window resize
+window.addEventListener('resize', updateBannerTransform);
+
+
 
 
 
@@ -57,6 +66,103 @@ menuToggle.addEventListener("click", () => {
 });
 
  
+
+
+// JavaScript for Women's Fashion Slider
+let womenSlideIndex = 0;
+
+function showSlides(slidesId, index) {
+  const slides = document.querySelector(`#${slidesId}`);
+  const totalSlides = slides.children.length;
+
+  // Reset index if out of bounds
+  if (index < 0) womenSlideIndex = totalSlides - 1;
+  else if (index >= totalSlides) womenSlideIndex = 0;
+
+  // Calculate and apply transform
+  slides.style.transform = `translateX(-${womenSlideIndex * 33.33}%)`; // Adjust for visible items
+}
+
+function prevSlide(section) {
+  if (section === 'women') {
+    womenSlideIndex--;
+    showSlides('women-slides', womenSlideIndex);
+  }
+}
+
+function nextSlide(section) {
+  if (section === 'women') {
+    womenSlideIndex++;
+    showSlides('women-slides', womenSlideIndex);
+  }
+}
+
+
+ 
+
+
+
+// JavaScript for Kids Fashion Slider
+let kidsSlideIndex = 0;
+
+function showSlides(slidesId, index) {
+  const slides = document.querySelector(`#${slidesId}`);
+  const totalSlides = slides.children.length;
+
+  // Reset index if out of bounds
+  if (index < 0) kidsSlideIndex = totalSlides - 1;
+  else if (index >= totalSlides) kidsSlideIndex = 0;
+
+  // Calculate and apply transform
+  slides.style.transform = `translateX(-${kidsSlideIndex * 33.33}%)`; // Adjust based on visible items
+}
+
+function prevSlide(section) {
+  if (section === 'kids') {
+    kidsSlideIndex--;
+    showSlides('kids-slides', kidsSlideIndex);
+  }
+}
+
+function nextSlide(section) {
+  if (section === 'kids') {
+    kidsSlideIndex++;
+    showSlides('kids-slides', kidsSlideIndex);
+  }
+}
+
+
+
+
+
+// Select elements
+const jewelrySlider = document.querySelector('#jewelry-slider .product-slides');
+const jewelryNextBtn = document.querySelector('#jewelry-slider .next-btn');
+const jewelryPrevBtn = document.querySelector('#jewelry-slider .prev-btn');
+
+let jewelryIndex = 0; // Initial slide index
+const jewelrySlideCount = jewelrySlider.children.length;
+const slideWidth = jewelrySlider.children[0].getBoundingClientRect().width;
+
+// Event listeners for navigation buttons
+jewelryNextBtn.addEventListener('click', () => {
+  jewelryIndex = (jewelryIndex + 1) % jewelrySlideCount; // Loop back to first slide
+  updateJewelrySlider();
+});
+
+jewelryPrevBtn.addEventListener('click', () => {
+  jewelryIndex = (jewelryIndex - 1 + jewelrySlideCount) % jewelrySlideCount; // Loop back to last slide
+  updateJewelrySlider();
+});
+
+// Function to update the slider position
+function updateJewelrySlider() {
+  const offset = jewelryIndex * slideWidth * -1;
+  jewelrySlider.style.transform = `translateX(${offset}px)`;
+}
+
+
+ 
 //   foooter
 // Scroll to Top Button
 const scrollToTopBtn = document.createElement("button");
@@ -76,4 +182,36 @@ window.addEventListener("scroll", () => {
   }
 });
 
- 
+
+
+
+
+
+
+let uniqueKidsSlideIndex = 0;
+
+function showUniqueSlides(slidesId, index) {
+  const slides = document.querySelector(`#${slidesId}`);
+  const totalSlides = slides.children.length;
+
+  // Reset index if out of bounds
+  if (index < 0) uniqueKidsSlideIndex = totalSlides - 1;
+  else if (index >= totalSlides) uniqueKidsSlideIndex = 0;
+
+  // Calculate and apply transform
+  slides.style.transform = `translateX(-${uniqueKidsSlideIndex * 33.33}%)`; // Adjust based on visible items
+}
+
+function prevUniqueSlide(section) {
+  if (section === 'kids') {
+    uniqueKidsSlideIndex--;
+    showUniqueSlides('unique-kids-slides', uniqueKidsSlideIndex);
+  }
+}
+
+function nextUniqueSlide(section) {
+  if (section === 'kids') {
+    uniqueKidsSlideIndex++;
+    showUniqueSlides('unique-kids-slides', uniqueKidsSlideIndex);
+  }
+}
