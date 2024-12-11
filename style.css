@@ -6,6 +6,8 @@ body {
 
 /* Header Styles */
 .header {
+  width: 100%;
+  height: 18vh;
   background-color: #1a1a1a;
   color: #fff;
 }
@@ -23,8 +25,7 @@ body {
 /* Logo */
 .logo h1 {
   color: #ff6b6b;
-  font-size: 24px;
-  margin: 0;
+  font-size: 44px;
   white-space: nowrap;
 }
 
@@ -34,7 +35,7 @@ body {
   display: flex;
   align-items: center;
   gap: 5px;
-  max-width: 500px;
+  max-width: 600px;
   margin: 10px 0;
 }
 
@@ -162,7 +163,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 50px; /* Position the menu below the button */
-  left: 0;
+  left: 10px;
   width: 250px; /* Set a fixed width for the dropdown */
   display: none;
   flex-direction: column;
@@ -176,14 +177,19 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #eee;
+}
+.menu a{
+  color: black;
+  text-decoration: none;
   cursor: pointer;
+
 }
 
-.menu li:hover {
-  background-color: #f0f0f0;
+.menu li a:hover {
+  color: rgb(245, 23, 23);
 }
 
-.menu li .arrow {
+.menu li  .arrow {
   font-size: 12px;
   color: #888;
 }
@@ -194,7 +200,7 @@ body {
 }
 
   
-/* product */
+product
  .products-slider {
   background-color: #fff; /* White background */
   padding: 1rem;
@@ -259,12 +265,10 @@ body {
 .next-btn {
   right: 10px;
 }
-
-
-
-
+ 
 /* footer */
 .footer {
+  margin-top: 60px;
   background-color: #34495e;
   padding: 30px 20px;
 }
@@ -330,9 +334,9 @@ body {
 
 .footer-bottom {
   text-align: center;
-  margin-top: 20px;
-  padding-top: 10px;
-  border-top: 1px solid #7f8c8d;
+  padding: 15px;
+  /* border-top: 1px solid #7f8c8d; */
+  background-color:#304252;
   font-size: 14px;
   color: rgb(191, 191, 191);
 }
@@ -376,13 +380,12 @@ body {
 .unique-products-slider {
   width: 100%;
   background-color: #fff;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
-  text-align: center;
 }
-
+ 
 .unique-slider-container {
   display: flex;
   align-items: center;
@@ -404,6 +407,7 @@ body {
   text-align: center;
   padding: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
 
 }
 
@@ -459,4 +463,330 @@ h3 {
     max-width: 100%;
   }
 }
+
+
+
+
+ /* login page */
+/* General body styling */
+.login_page{
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+
+}
+  
+
+/* Login container styling */
+.login-container {
+  background-color: #fff;
+  padding: 25px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+/* Form header */
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Input group styling */
+.input-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #ff6600;
+}
+
+.input-group .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 70%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 22px;
+  color: #666;
+}
+
+/* Forgot password link */
+.extra-options {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+
+.extra-options a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.extra-options a:hover {
+  text-decoration: underline;
+}
+
+/* Button styling */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e65500;
+}
+
+/* Sign-up link styling */
+.signup-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.signup-link a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Social login buttons */
+.text_log{
+  text-align: center;
+  margin-top: 30px;
+  color: grey;
+}
+.social-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.image_logo{
+  width: 30px;
+  margin-top: 20px;
+}
+
+.social-login p {
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 10px;
+}
+p{
+  color: grey;
+}
+
+.social-login a {
+  
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.google_btn{
+  color: grey ;
+  font-size: 20px;
+}
+
+.facebook_btn{
+  color: grey ;
+  font-size: 20px ;
+}
+
+
+
+ 
+
+  /* signup */
+  /* General styling */
+  .sign_up{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container styling */
+  .signup-container {
+    background-color: #fff;
+    width: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Form header */
+  .signup-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input group */
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .phone-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .phone-input .country-code {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .phone-input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+  }
+  
+  /* Terms and conditions */
+  .terms {
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .terms label a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .terms label a:hover {
+    text-decoration: underline;
+  }
+  
+  .terms input {
+    margin-right: 8px;
+  }
+  
+  /* Button styling */
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #e55500;
+  }
+  
+  /* Login link */
+  .login-link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .login-link a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social signup */
+  .social-signup {
+    margin-top: 25px;
+  }
+  
+  .social-signup p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .social-signup a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .google-btn {
+    background-color: #4285F4;
+  }
+  
+  .google-btn:hover {
+    background-color: #357ae8;
+  }
+  
+  .facebook-btn {
+    background-color: #3B5998;
+  }
+  
+  .facebook-btn:hover {
+    background-color: #2d4373;
+  }
+  
 
