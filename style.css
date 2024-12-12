@@ -318,11 +318,21 @@ product
 }
 
 .app-links img {
-  max-width: 150px;
-  margin: 5px 0;
+  max-width: 20px;
+  /* margin: 5px 0; */
 }
 .app-links a{
   color: white;
+  text-decoration: none;
+}
+
+.app-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 80px;
+  
 }
 
 .social-icons a {
@@ -357,23 +367,7 @@ product
     max-width: 120px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 /* Unique Kids Fashion Slider */
 /* Unique Kids Fashion Slider */
