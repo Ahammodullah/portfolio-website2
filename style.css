@@ -200,7 +200,7 @@ body {
 }
 
   
-product
+/* product */
  .products-slider {
   background-color: #fff; /* White background */
   padding: 1rem;
@@ -226,8 +226,11 @@ product
   background-color: #fff; /* Ensure each card matches the section's background */
   border: 1px solid #ddd; /* Optional: Border around each card */
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
   padding: 10px;
+}
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .product-card img {
@@ -404,6 +407,11 @@ product
   margin: 0 10px;
 
 }
+.unique-product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 .unique-product-card img {
   width: 80%;
