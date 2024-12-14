@@ -199,6 +199,103 @@ body {
   display: flex;
 }
 
+ /* product1 */
+ .main_div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+ }
+ .btn_more button{
+  /* width: 160px;  */
+  height: 8vh;
+  border-radius:6px;
+  font-size: 15px;
+ }
+ .btn_more button:hover{
+  background-color: rgb(93, 93, 246);
+  border: none;
+  transition: 1s;
+ }
+
+.card_design {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: start;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+} 
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sale-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff4d6d;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.content {
+  
+  padding: 15px;
+}
+
+.category {
+  color: #888;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.prices {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.prices .discount {
+  color: #888;
+  /* text-decoration: line-through; */
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.prices .sale-price {
+  font-size: 18px;
+  color: #3a67cc;
+}
+
+
+
+
+
+
+
+
   
 /* product */
  .products-slider {
@@ -245,7 +342,7 @@ body {
 
 .product-card .price {
   font-weight: bold;
-  color: #555;
+  color: #3a67cc;
 }
 
 .slider-btn {
@@ -430,7 +527,7 @@ h3 {
 .unique-price {
   font-size: 14px;
   font-weight: bold;
-  color: #d32f2f;
+  color: #3a67cc;
 }
 
 .unique-slider-btn {
