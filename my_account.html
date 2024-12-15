@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sign In Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <div class="main_myaccount">
+        <div class="unique-container-xyz">
+            <div class="unique-tabs-xyz">
+                <span class="active-tab-xyz">🔒 Sign in</span>
+                <span class="inactive-tab-xyz">👤 Sign up</span>
+            </div>
+            <form>
+                <label for="unique-username-xyz">Username or Email address</label>
+                <input type="text" id="unique-username-xyz" class="input-field-xyz" placeholder="Enter your username or email" required>
+    
+                <label for="unique-password-xyz">Password</label>
+                <div class="unique-password-container-xyz">
+                    <input type="password" id="unique-password-xyz" class="input-field-xyz" placeholder="Enter your password" required>
+                    <span class="unique-toggle-password-xyz" onclick="toggleUniquePassword()">👁️</span>
+                </div>
+    
+                <div class="unique-options-xyz">
+                    <label>
+                        <input type="checkbox" checked> Remember me
+                    </label>
+                    <a href="#" class="unique-forgot-password-xyz">Forgot password?</a>
+                </div>
+    
+                <button type="submit" class="unique-sign-in-btn-xyz">Sign in</button>
+            </form>
+        </div>
+     </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

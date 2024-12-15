@@ -242,6 +242,17 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
 });
 
 
+// my_account//
+function toggleUniquePassword() {
+  const passwordInput = document.getElementById('unique-password-xyz');
+  if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+  } else {
+      passwordInput.type = 'password';
+  }
+}
+
+
 
 
 //   signup
