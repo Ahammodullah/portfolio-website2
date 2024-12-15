@@ -1224,3 +1224,42 @@ label {
 }
   
 
+
+/* refund */
+.text_list p{
+  color: black;
+}
+.text_list{
+  padding: 20px;
+  
+}
+.text_list h3{
+  
+  font-weight: bold;
+}
+
+
+
+/* privacy */
+.text_p p{
+  color: black;
+  padding: 20px;
+}
+.text_all h2{
+  padding: 20px;
+  font-weight: bold;
+}
+
+
+
+/* terms_sevice */
+.main_div_section{
+  padding: 20px;
+}
+.terms_text_section{
+  margin-top: 20px;
+}
+.terms_text_section p{
+  color: black;
+}
+
