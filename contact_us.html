@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fnfbuy</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="fnfbuy_main">
+        <header class="fnfbuy-header">
+            <h1>Contact Us</h1>
+            <p class="fnfbuy_text">Your feedback matters! Reach us easily through the options below.</p>
+        </header>
+        <main class="fnfbuy-main">
+            <section class="info-box">
+                <h2>Our Contact Information</h2>
+                <p><strong>Address:</strong> 123 Fnfbuy Avenue, Dhaka, Bangladesh</p>
+                <p><strong>Phone:</strong> +880 1234 567890</p>
+                <p><strong>Email:</strong> support@fnfbuy.com</p>
+            </section>
+            <section class="message-box">
+                <h2>Send Us a Message</h2>
+                <form action="submit_form.php" method="post" class="fnfbuy-form">
+                    <label for="fnfbuy-name">Your Name</label>
+                    <input type="text" id="fnfbuy-name" name="name" required>
+                    
+                    <label for="fnfbuy-email">Your Email</label>
+                    <input type="email" id="fnfbuy-email" name="email" required>
+                    
+                    <label for="fnfbuy-message">Your Message</label>
+                    <textarea id="fnfbuy-message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit" class="fnfbuy-btn">Send Message</button>
+                </form>
+            </section>
+        </main>
+        <footer class="fnfbuy-footer">
+            <p>&copy; 2024 Fnfbuy. All Rights Reserved.</p>
+             
+        </footer>
+    </div>
+</body>
+</html>
