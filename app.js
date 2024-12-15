@@ -273,3 +273,41 @@ document.getElementById('signupForm').addEventListener('submit', function (event
 
 
 
+
+// details//
+// Quantity Control
+const minusBtn = document.querySelector('.fnf-qty-minus');
+const plusBtn = document.querySelector('.fnf-qty-plus');
+const qtyValue = document.querySelector('.fnf-qty-value');
+
+let quantity = 1; // Default quantity
+
+// Decrease Quantity
+minusBtn.addEventListener('click', () => {
+    if (quantity > 1) {
+        quantity--;
+        qtyValue.textContent = quantity;
+    }
+});
+
+// Increase Quantity
+plusBtn.addEventListener('click', () => {
+    quantity++;
+    qtyValue.textContent = quantity;
+});
+
+// Cart Button Click
+const cartBtn = document.querySelector('.fnf-cart-btn');
+cartBtn.addEventListener('click', () => {
+    alert(`Added ${quantity} item(s) to the cart!`);
+});
+
+// Buy Now Button Click
+const buyBtn = document.querySelector('.fnf-buy-btn');
+buyBtn.addEventListener('click', () => {
+    alert(`Proceeding to buy ${quantity} item(s).`);
+});
+
+
+
+
