@@ -5,17 +5,14 @@ body {
 }
 
 /* Header Styles */
-
 .header_section_main{
   z-index: 1;
 }
-
 .header {
   width: 100%;
   background-color: #1a1a1a;
   color: #fff;
 }
-
 .container {
   display: flex;
   align-items: center;
@@ -33,7 +30,6 @@ body {
 }
 .logo a{
   text-decoration: none;
-
 }
 
 /* Search Bar */
@@ -53,7 +49,6 @@ body {
   align-items: center;
   max-width: 580px;
   margin: 10px ;
-  
 }
 
 .search-bar input {
@@ -92,10 +87,7 @@ input:focus{
   text-decoration: none;
   font-size: 15px;
 }
- 
- 
 .cart{
-  
   color: black;
   text-decoration: none;
 }
@@ -184,9 +176,7 @@ input:focus{
 
 
 
-/* menulist */
- 
- 
+/* menulist *
 /* Navbar Styling */
 .navbar {
   background-color: #2c3e50;
@@ -250,6 +240,10 @@ input:focus{
 }
 
 
+ 
+
+
+
  /* product1 */
  .prdt_main a{
   text-decoration: none;
@@ -287,8 +281,7 @@ input:focus{
   background-color: #f4f4f4;
   display: flex;
   justify-content: start;
-  /* height: 100vh; */
-  padding: 10px;
+  padding: 8px;
   box-sizing: border-box;
 } 
 
@@ -326,9 +319,7 @@ input:focus{
 }
 
 
-  
-  .content {
-   
+   .content {
   padding: 15px;
 }
 
@@ -373,172 +364,113 @@ input:focus{
   color: #3a67cc;
 }
 
-
-
  
-
-/* more */
-/* General Reset */
-
-  .section_main{
-    display: flex;
-  }
-  .more_product_main{
-    width: 100%;
-  }
-  .fnfbuy-filter-container {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    width: 330px;
-    height: 760px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-  }
-  
-  .fnfbuy-filter-title {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #333333;
-    margin-bottom: 10px;
-  }
-  
-  .fnfbuy-filter-section {
-    margin-bottom: 20px;
-  }
-  
-  .fnfbuy-filter-dropdown,
-  .fnfbuy-price-input {
-    width: 280px;
-    height: 40px;
-    padding: 8px 10px;
-    margin-top: 25px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .fnfbuy-filter-dropdown:focus,
-  .fnfbuy-price-input:focus {
-    outline: none;
-    border-color:black;
-  }
-  
-  .fnfbuy-price-inputs {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .fnfbuy-price-input {
-    width: 137px;
-    /* flex: 1; */
-  }
-  
-  .fnfbuy-filter-btn {
-    background-color: #ff5f5f;
-    color: #ffffff;
-    padding: 10px 0;
-    width: 285px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .fnfbuy-filter-btn:hover {
-    background-color: #e74c3c;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .fnfbuy-filter-container {
-      max-width: 100%;
-      padding: 15px;
-    }
-  }
   
 
-
-/* -------------- */
-
-
-
-
- 
-/* product */
- .products-slider {
-  background-color: #fff; /* White background */
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+/* Unique Kids Fashion Slider */
+/* Unique Kids Fashion Slider */
+.unique-products-slider {
+  width: 100%;
+  background-color: #fff;
+  /* padding: 1rem; */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
 }
-
-.slider-container {
-  position: relative;
+ 
+.unique-slider-container {
   display: flex;
   align-items: center;
+  position: relative;
   overflow: hidden;
 }
 
-.product-slides {
+.unique-product-slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
-.product-card {
-  flex: 0 0 30%; /* Adjust based on how many items to display at a time */
-  margin: 0 10px;
-  text-align: center;
-  background-color: #fff; /* Ensure each card matches the section's background */
-  border: 1px solid #ddd; /* Optional: Border around each card */
+.unique-product-card {
+  flex: 0 0 33.33%; /* Show 3 items in the viewport */
+  max-width: 33.33%;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 10px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+
 }
-.product-card:hover {
+.unique-product-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.product-card img {
-  max-width: 100%;
-  border-radius: 4px;
+
+.unique-product-card img {
+  width: 80%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
-.product-card h3 {
-  font-size: 1rem;
-  margin: 0.5rem 0;
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+h2{
+  padding: 20px;
 }
 
-.product-card .price {
+.unique-price {
+  font-size: 14px;
   font-weight: bold;
   color: #3a67cc;
 }
 
-.slider-btn {
+.unique-slider-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   padding: 15px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 10;
   border-radius: 50%;
 }
 
-.prev-btn {
+.unique-prev-btn {
   left: 10px;
 }
 
-.next-btn {
+.unique-next-btn {
   right: 10px;
 }
- 
+
+.unique-slider-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .unique-product-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
 /* footer */
 .footer {
-  margin-top: 60px;
+  margin-top: 40px;
   background-color: #34495e;
   padding: 30px 20px;
 }
@@ -639,102 +571,96 @@ input:focus{
 }
  
 
-/* Unique Kids Fashion Slider */
-/* Unique Kids Fashion Slider */
-.unique-products-slider {
+
+
+
+
+
+
+/* more */
+/* General Reset */
+
+.section_main{
+  display: flex;
+  flex-direction: row;
+}
+.more_product_main{
   width: 100%;
-  background-color: #fff;
-  /* padding: 1rem; */
+}
+.fnfbuy-filter-container {
+  background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
-}
- 
-.unique-slider-container {
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
+  padding: 20px;
+  width: 330px;
+  height: 760px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
 }
 
-.unique-product-slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.unique-product-card {
-  flex: 0 0 33.33%; /* Show 3 items in the viewport */
-  max-width: 33.33%;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-  padding: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 0 10px;
-
-}
-.unique-product-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-
-.unique-product-card img {
-  width: 80%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
+.fnfbuy-filter-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333333;
   margin-bottom: 10px;
 }
 
-h3 {
+.fnfbuy-filter-section {
+  margin-bottom: 20px;
+}
+
+.fnfbuy-filter-dropdown,
+.fnfbuy-price-input {
+  width: 280px;
+  height: 40px;
+  padding: 8px 10px;
+  margin-top: 25px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
   font-size: 16px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-h2{
-  padding: 20px;
+  color: #555;
 }
 
-.unique-price {
-  font-size: 14px;
-  font-weight: bold;
-  color: #3a67cc;
+.fnfbuy-filter-dropdown:focus,
+.fnfbuy-price-input:focus {
+  outline: none;
+  border-color:black;
 }
 
-.unique-slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+.fnfbuy-price-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.fnfbuy-price-input {
+  width: 137px;
+  /* flex: 1; */
+}
+
+.fnfbuy-filter-btn {
+  background-color: #ff5f5f;
+  color: #ffffff;
+  padding: 10px 0;
+  width: 285px;
   border: none;
-  padding: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
-  z-index: 10;
-  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 
-.unique-prev-btn {
-  left: 10px;
-}
-
-.unique-next-btn {
-  right: 10px;
-}
-
-.unique-slider-btn:hover {
-  background: rgba(0, 0, 0, 0.8);
+.fnfbuy-filter-btn:hover {
+  background-color: #e74c3c;
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
-  .unique-product-card {
-    flex: 0 0 100%;
+@media (max-width: 768px) {
+  .fnfbuy-filter-container {
     max-width: 100%;
+    padding: 15px;
   }
 }
+
+
 
 
 
@@ -2030,3 +1956,17 @@ label {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
