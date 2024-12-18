@@ -310,6 +310,77 @@ buyBtn.addEventListener('click', () => {
 
 
 
- 
 
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const productContainer = document.getElementById("unique-product-container");
+  const prevBtn = document.getElementById("unique-prev-btn");
+  const nextBtn = document.getElementById("unique-next-btn");
+  const pageNumber = document.getElementById("unique-page-number");
+
+  let currentPage = 1;
+  const productsPerPage = 4;
+
+  // Placeholder product data
+  const products = [
+    { name: "Men's Formal Shirt", price: "$33.25", img: "https://via.placeholder.com/200" },
+    { name: "Casual Blue T-Shirt", price: "$19.99", img: "https://via.placeholder.com/200" },
+    { name: "Elegant Red Dress", price: "$45.50", img: "https://via.placeholder.com/200" },
+    { name: "Classic Leather Shoes", price: "$65.00", img: "https://via.placeholder.com/200" },
+    { name: "Stylish Wrist Watch", price: "$120.00", img: "https://via.placeholder.com/200" },
+    { name: "Black Jeans Pants", price: "$40.00", img: "https://via.placeholder.com/200" },
+    { name: "Summer Sandals", price: "$25.00", img: "https://via.placeholder.com/200" },
+    { name: "Winter Wool Coat", price: "$80.00", img: "https://via.placeholder.com/200" },
+    { name: "Sports Sneakers", price: "$55.00", img: "https://via.placeholder.com/200" },
+    { name: "Designer Handbag", price: "$150.00", img: "https://via.placeholder.com/200" }
+  ];
+
+  // Function to display products
+  function displayProducts(page) {
+    productContainer.innerHTML = ""; // Clear current products
+    const start = (page - 1) * productsPerPage;
+    const end = start + productsPerPage;
+
+    const productSlice = products.slice(start, end);
+
+    productSlice.forEach(product => {
+      const productCard = document.createElement("div");
+      productCard.classList.add("unique-product-card");
+
+      productCard.innerHTML = `
+        <img src="${product.img}" alt="${product.name}" class="unique-product-image" />
+        <div class="unique-product-details">
+          <p class="unique-product-name">${product.name}</p>
+          <p class="unique-product-price">${product.price}</p>
+        </div>
+      `;
+      productContainer.appendChild(productCard);
+    });
+
+    // Update the page number
+    pageNumber.textContent = page;
+
+    // Enable/Disable buttons
+    prevBtn.disabled = page === 1;
+    nextBtn.disabled = end >= products.length;
+  }
+
+  // Event Listeners for pagination
+  prevBtn.addEventListener("click", () => {
+    if (currentPage > 1) {
+      currentPage--;
+      displayProducts(currentPage);
+    }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (currentPage * productsPerPage < products.length) {
+      currentPage++;
+      displayProducts(currentPage);
+    }
+  });
+
+  // Initial display
+  displayProducts(currentPage);
+});
