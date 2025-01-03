@@ -66,112 +66,7 @@ menuToggle.addEventListener("click", () => {
 });
 
  
-
-
-
-
-
-
-
-
-
-
-// // JavaScript for Women's Fashion Slider
-// let womenSlideIndex = 0;
-
-// function showSlides(slidesId, index) {
-//   const slides = document.querySelector(`#${slidesId}`);
-//   const totalSlides = slides.children.length;
-
-//   // Reset index if out of bounds
-//   if (index < 0) womenSlideIndex = totalSlides - 1;
-//   else if (index >= totalSlides) womenSlideIndex = 0;
-
-//   // Calculate and apply transform
-//   slides.style.transform = `translateX(-${womenSlideIndex * 33.33}%)`; // Adjust for visible items
-// }
-
-// function prevSlide(section) {
-//   if (section === 'women') {
-//     womenSlideIndex--;
-//     showSlides('women-slides', womenSlideIndex);
-//   }
-// }
-
-// function nextSlide(section) {
-//   if (section === 'women') {
-//     womenSlideIndex++;
-//     showSlides('women-slides', womenSlideIndex);
-//   }
-// }
-
-
  
-
-
-// // JavaScript for Kids Fashion Slider
-// let kidsSlideIndex = 0;
-
-// function showSlides(slidesId, index) {
-//   const slides = document.querySelector(`#${slidesId}`);
-//   const totalSlides = slides.children.length;
-
-//   // Reset index if out of bounds
-//   if (index < 0) kidsSlideIndex = totalSlides - 1;
-//   else if (index >= totalSlides) kidsSlideIndex = 0;
-
-//   // Calculate and apply transform
-//   slides.style.transform = `translateX(-${kidsSlideIndex * 33.33}%)`; // Adjust based on visible items
-// }
-
-// function prevSlide(section) {
-//   if (section === 'kids') {
-//     kidsSlideIndex--;
-//     showSlides('kids-slides', kidsSlideIndex);
-//   }
-// }
-
-// function nextSlide(section) {
-//   if (section === 'kids') {
-//     kidsSlideIndex++;
-//     showSlides('kids-slides', kidsSlideIndex);
-//   }
-// }
-
-
-
-
-
-// // Select elements
-// const jewelrySlider = document.querySelector('#jewelry-slider .product-slides');
-// const jewelryNextBtn = document.querySelector('#jewelry-slider .next-btn');
-// const jewelryPrevBtn = document.querySelector('#jewelry-slider .prev-btn');
-
-// let jewelryIndex = 0; // Initial slide index
-// const jewelrySlideCount = jewelrySlider.children.length;
-// const slideWidth = jewelrySlider.children[0].getBoundingClientRect().width;
-
-// // Event listeners for navigation buttons
-// jewelryNextBtn.addEventListener('click', () => {
-//   jewelryIndex = (jewelryIndex + 1) % jewelrySlideCount; // Loop back to first slide
-//   updateJewelrySlider();
-// });
-
-// jewelryPrevBtn.addEventListener('click', () => {
-//   jewelryIndex = (jewelryIndex - 1 + jewelrySlideCount) % jewelrySlideCount; // Loop back to last slide
-//   updateJewelrySlider();
-// });
-
-// // Function to update the slider position
-// function updateJewelrySlider() {
-//   const offset = jewelryIndex * slideWidth * -1;
-//   jewelrySlider.style.transform = `translateX(${offset}px)`;
-// }
-
- 
-
-
-
 
 // men js code//
 // men js code//
@@ -327,56 +222,57 @@ function nextUniqueSlide4(section) {
 
  // loginpage
 // Show/Hide Password
-// function togglePassword() {
-//   const passwordField = document.getElementById('password');
-//   if (passwordField.type === 'password') {
-//     passwordField.type = 'text';
-//   } else {
-//     passwordField.type = 'password';
-//   }
-// }
+function togglePassword() {
+  const passwordField = document.getElementById('password');
+  if (passwordField.type === 'password') {
+    passwordField.type = 'text';
+  } else {
+    passwordField.type = 'password';
+  }
+}
 // Form submission handler
-// document.getElementById('loginForm').addEventListener('submit', function (event) {
-//   event.preventDefault(); // Prevent default form submission
-//   const email = document.getElementById('email').value;
-//   const password = document.getElementById('password').value;
+document.getElementById('loginForm').addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent default form submission
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
 
-//   if (email && password) {
-//     alert(`Login successful!\nEmail/Phone: ${email}\nPassword: ${password}`);
-//   } else {
-//     alert('Please fill out all fields.');
-//   }
-// });
+  if (email && password) {
+    alert(`Login successful!\nEmail/Phone: ${email}\nPassword: ${password}`);
+  } else {
+    alert('Please fill out all fields.');
+  }
+});
 
 
-// my_account//
-// function toggleUniquePassword() {
-//   const passwordInput = document.getElementById('unique-password-xyz');
-//   if (passwordInput.type === 'password') {
-//       passwordInput.type = 'text';
-//   } else {
-//       passwordInput.type = 'password';
-//   }
-// }
+// my_account
+function toggleUniquePassword() {
+  const passwordInput = document.getElementById('unique-password-xyz');
+  if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+  } else {
+      passwordInput.type = 'password';
+  }
+}
 
 
 
 
 //   signup
 // Handle Form Submission
-// document.getElementById('signupForm').addEventListener('submit', function (event) {
-//   event.preventDefault(); // Prevent form from submitting
-//   const phoneNumber = document.getElementById('phone-number').value;
-//   const termsAccepted = document.getElementById('agree-terms').checked;
 
-//   if (phoneNumber && termsAccepted) {
-//     alert(`Code sent to: ${phoneNumber}`);
-//   } else if (!termsAccepted) {
-//     alert('You must agree to the terms and conditions.');
-//   } else {
-//     alert('Please fill out the phone number.');
-//   }
-// });
+document.getElementById('signupForm').addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent form from submitting
+  const phoneNumber = document.getElementById('phone-number').value;
+  const termsAccepted = document.getElementById('agree-terms').checked;
+
+  if (phoneNumber && termsAccepted) {
+    alert(`Code sent to: ${phoneNumber}`);
+  } else if (!termsAccepted) {
+    alert('You must agree to the terms and conditions.');
+  } else {
+    alert('Please fill out the phone number.');
+  }
+});
 
 
 
